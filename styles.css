@@ -1,0 +1,695 @@
+/* CSS styles for the entire website */
+
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: #e0c005;
+    color: #080808;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center; /* Center aligns everything inside the header */
+}
+
+/* CSS styles for the entire website */
+
+.title {
+    font-size: 50px; /* Increase the font size */
+    margin-bottom: 20px; /* Add margin to space out the navigation links */
+    font-weight: bolder;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Display the list horizontally */
+    justify-content: center; /* Center aligns the list horizontally */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Add margin between the navigation links */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last navigation link */
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem; /* Adjust padding to your preference */
+    display: flex;
+    flex-direction: row;
+    align-items: auto; /* Center horizontally */
+    justify-content: auto; /* Center vertically */
+    min-height: 100vh; /* Ensure the content takes up at least the full viewport height */
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons .icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons .icon i {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons .icon i:hover {
+    color: #007bff;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.about-image {
+    display: block;
+    margin: 0 auto 20px; /* Center the image horizontally and add bottom margin */
+    max-width: 100%;
+    height: auto;
+}
+
+main h2 {
+    text-align: center; /* Center align the heading */
+    font-size: 35px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+main p {
+    margin-bottom: 20px; /* Add margin below each paragraph */
+    font-size: 16px; /* Adjust the font size */
+    font-weight: normal; /* Set font weight to normal */
+}
+
+/* CSS for product images */
+.cart-item img {
+    width: 100px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin between the image and item details */
+}
+
+/* CSS for checkout and remove buttons */
+button.checkout-button,
+button.remove-button {
+    background-color:#e0c005; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.checkout-button:hover,
+button.remove-button:hover {
+    background-color: #e0c005; /* Darker green on hover */
+}
+
+button.remove-button {
+    background-color: #f44336; /* Red for remove button */
+}
+
+
+/* CSS styles for the navigation links */
+
+/* CSS styles for the navigation links */
+
+/* CSS styles for the navigation links */
+
+.nav-links li a {
+    color: #0e0d0d;
+    text-decoration: none;
+    padding: 15px 25px; /* Increase padding to create larger clickable areas */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 25px; /* Increase the font size */
+}
+
+.nav-links li a:hover {
+    background-color: #f09d9d; /* Darken the background color on hover */
+}
+
+/* CSS for the shopping cart */
+.cart-items {
+    width: 80%; /* Adjust the width of the cart items container */
+    margin-top: 50px; /* Add margin at the top to separate from other content */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    text-align: center; /* Center aligns the cart items */
+}
+
+.cart-summary {
+    width: 80%; /* Adjust the width of the cart summary container */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    text-align: center; /* Center aligns the cart summary */
+}
+
+/* CSS for the checkout button */
+button.checkout-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 30px; /* Increase padding for larger clickable area */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; /* Increase the font size */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.checkout-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* CSS for product images in the cart */
+.cart-item img {
+    width: 170px; /* Increase the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some space below the image */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* CSS for the shopping cart */
+.cart-items {
+    width: 80%; /* Adjust the width of the cart items container */
+    margin-top: 50px; /* Add margin at the top to separate from other content */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    text-align: center; /* Center aligns the cart items */
+}
+/* CSS for the main content area */
+/* CSS styles for the entire website */
+
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: #e0c005;
+    color: #080808;
+    padding: 1rem;
+    text-align: center; /* Center aligns everything inside the header */
+}
+
+/* CSS styles for the entire website */
+
+.title {
+    font-size: 50px; /* Increase the font size */
+    margin-bottom: 20px; /* Add margin to space out the navigation links */
+    font-weight: bolder;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Display the list horizontally */
+    justify-content: center; /* Center aligns the list horizontally */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Add margin between the navigation links */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last navigation link */
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem; /* Adjust padding to your preference */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the content takes up at least the full viewport height */
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons .icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons .icon i {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons .icon i:hover {
+    color: #007bff;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.about-image {
+    display: block;
+    margin: 0 auto 20px; /* Center the image horizontally and add bottom margin */
+    max-width: 100%;
+    height: auto;
+}
+
+main h2 {
+    text-align: center; /* Center align the heading */
+    font-size: 35px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+main p {
+    margin-bottom: 20px; /* Add margin below each paragraph */
+    font-size: 16px; /* Adjust the font size */
+    font-weight: normal; /* Set font weight to normal */
+}
+
+/* CSS for product images */
+.cart-item img {
+    width: 100px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin between the image and item details */
+}
+
+/* CSS for checkout and remove buttons */
+button.checkout-button,
+button.remove-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.checkout-button:hover,
+button.remove-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button.remove-button {
+    background-color: #f44336; /* Red for remove button */
+}
+
+button.remove-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+/* CSS styles for the navigation links */
+
+/* CSS styles for the navigation links */
+
+/* CSS styles for the navigation links */
+
+.nav-links li a {
+    color: #0e0d0d;
+    text-decoration: none;
+    padding: 15px 25px; /* Increase padding to create larger clickable areas */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 25px; /* Increase the font size */
+}
+
+.nav-links li a:hover {
+    background-color: #f09d9d; /* Darken the background color on hover */
+}
+
+/* CSS for the shopping cart */
+.cart-items {
+    width: 80%; /* Adjust the width of the cart items container */
+    margin-top: 50px; /* Add margin at the top to separate from other content */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    text-align: center; /* Center aligns the cart items */
+}
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.add-to-cart-btn:hover {
+    background-color: #e73b10;
+}
+.cart-summary {
+    width: 80%; /* Adjust the width of the cart summary container */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    text-align: center; /* Center aligns the cart summary */
+}
+
+/* CSS for the checkout button */
+button.checkout-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 30px; /* Increase padding for larger clickable area */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; /* Increase the font size */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.checkout-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* CSS for product images in the cart */
+.cart-item img {
+    width: 170px; /* Increase the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some space below the image */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* CSS for the shopping cart */
+.cart-items {
+    width: 80%; /* Adjust the width of the cart items container */
+    margin-top: 50px; /* Add margin at the top to separate from other content */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    text-align: center; /* Center aligns the cart items */
+}
+/* CSS for the main content area */
+main {
+    padding: 2rem; /* Adjust padding to your preference */
+    display: flex; /* Use flexbox to display items */
+    justify-content: space-between; /* Distribute items evenly along the main axis with space between them */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+/* CSS for each product */
+.product {
+    width: calc(25% - 20px); /* Set a width for each product (one-fourth of the container width with some margin) */
+    text-align: center; /* Center align content within each product */
+    margin-bottom: 20px; /* Add some space at the bottom of each product */
+    border: 1px solid #ccc; /* Add a border for a visual separation */
+    border-radius: 8px; /* Add some border radius for a smoother appearance */
+    padding: 10px; /* Add some padding around each product */
+    box-sizing: border-box; /* Include padding and border in the product's total width */
+}
+
+.product img {
+    width: 100%; /* Ensure the image fills the container */
+    max-width: 100px; /* Limit the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Apply border radius for a smoother appearance */
+}
+
+.product h3 {
+    margin-top: 10px; /* Add some space above the product name */
+}
+
+.product p {
+    margin: 5px 0; /* Add some space around other product details */
+}
+
+/* CSS for the footer */
+footer {
+    padding: 1rem; /* Add padding to the footer */
+    text-align: center; /* Center align content within the footer */
+    background-color:#e0c005; /* Add a background color to the footer */
+    border-top: 1px solid #070707; /* Add a border to separate footer from main content */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.product-container {
+    display: flex; /* Set display to flex to make children flex items */
+    flex-wrap: nowrap; /* Ensure flex items do not wrap */
+    justify-content: space-around; /* Distribute flex items with space around */
+}
+
+.product {
+    width: 200px; /* Set width for each product */
+    margin: 10px; /* Add margin around each product */
+    text-align: center; /* Center-align text within each product */
+}
+
+
+
+/* CSS for the registration form */
+.container {
+    width: 400px; /* Adjust the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to the container */
+    background-color: #ffffff; /* Background color for the container */
+    border: 1px solid #cccccc; /* Border for the container */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add margin between form groups */
+}
+
+.form-group label {
+    display: block; /* Display labels as block elements for better spacing */
+    margin-bottom: 5px; /* Add margin below labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+.form-group input {
+    width: 100%; /* Set input fields to fill the width of the container */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #cccccc; /* Border for input fields */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+button[type="submit"] {
+    width: 100%; /* Set the submit button to fill the width of the container */
+    padding: 10px; /* Add padding to the submit button */
+    background-color: #e0c005; /* Green background color for the submit button */
+    color: #1a1a1a; /* Text color for the submit button */
+    border: none; /* Remove border from the submit button */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #d3ac04; /* Darker green background color on hover */
+}
+
+h2 {
+    font-weight: bold; /* Make heading bold */
+    margin-bottom: 20px; /* Add margin below heading */
+}
+.container {
+    width: 400px; /* Adjust the width of the container */
+    margin: 50px auto; /* Center the container horizontally and provide top margin */
+    padding: 20px; /* Add padding to the container */
+    background-color: #ffffff; /* Background color for the container */
+    border: 1px solid #cccccc; /* Border for the container */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    background-color: #f5f5f5; /* Background color behind the form */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add margin between form groups */
+}
+
+.form-group label {
+    display: block; /* Display labels as block elements for better spacing */
+    margin-bottom: 5px; /* Add margin below labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+.form-group input {
+    width: 100%; /* Set input fields to fill the width of the container */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #cccccc; /* Border for input fields */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+button[type="submit"] {
+    width: 100%; /* Set the submit button to fill the width of the container */
+    padding: 10px; /* Add padding to the submit button */
+    background-color: #e0c005; /* Green background color for the submit button */
+    color: #1a1a1a; /* Text color for the submit button */
+    font-size: medium;
+    font-weight: bold;
+    border: none; /* Remove border from the submit button */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #d3ac04; /* Darker green background color on hover */
+}
+
+h2 {
+    font-size: 30px; /* Increase font size for heading */
+    text-align: center; /* Center align the heading */
+    font-weight: bold; /* Make heading bold */
+    margin-bottom: 20px; /* Add margin below heading */
+}
+
+
+
+
+/* CSS for the main content area */
+/* CSS for the main content area */
+main {
+    padding: 2rem; /* Adjust padding to your preference */
+    display: flex; /* Use flexbox to display items */
+    flex-wrap: nowrap; /* Ensure items do not wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly along the main axis with space between them */
+}
+
+/* CSS for each product */
+.product {
+    width: 200px; /* Set width for each product */
+    margin: 10px; /* Add margin around each product */
+    text-align: center; /* Center-align text within each product */
+}
+
+
+.product img {
+    width: 100%; /* Ensure the image fills the container */
+    max-width: 100px; /* Limit the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Apply border radius for a smoother appearance */
+}
+
+.product h3 {
+    margin-top: 10px; /* Add some space above the product name */
+}
+
+.product p {
+    margin: 5px 0; /* Add some space around other product details */
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Grocery Store - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">K Grocery Store</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+ 
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li><!-- Link to cart page -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2> Your Cart</h2>
+        <div class="cart-items">
+            <!-- Example of cart item -->
+            <div class="cart-item">
+                <img src="orange.jpg" alt="Product 1">
+                <div class="item-details">
+                    <h3>Orange</h3>
+                    <p>Price: 100.00</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-button"><i class="fas fa-trash"></i> Remove</button>
+            </div>
+            <!-- Additional cart items can be added here -->
+        </div>
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Total Items: 2</p>
+            <p>Total Price: $20.00</p>
+            <button class="checkout-button">Checkout</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 K-Grocery Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
